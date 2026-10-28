@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/main2.css";
 import "../styles/token.css";
-import logo from "../images/Logo.png";
-import iconGoogle from "../images/icon_google.png";
+import logo from "../../public/images/Logo.png";
+import iconGoogle from "../../public/images/icon_google.png";
 
 function Signin() {
 	const [form, setForm] = useState({ username: "", password: "", confirmPassword: "" });
