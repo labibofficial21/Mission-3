@@ -1,5 +1,6 @@
 import "../styles/main2.css";
 import "../styles/token.css";
+import { Link } from "react-router-dom";
 import { movieLandscape, moviePortrait, movieUtils } from "../data/moviesData.js";
 
 function Home() {
@@ -51,26 +52,26 @@ function Home() {
 						</summary>
 						<ul>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span className="icon">👤</span> Profil Saya
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#">
+								<Link to="#">
 									<span className="icon">★</span> Ubah Premium
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="signin.html">
+								<Link to="/signin">
 									<span className="icon">⍈</span> Keluar
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</details>
 				</nav>
 
 				<div className="banner">
-					<img src="/images/246afe98babc4d30c3cdb9f940b11d577eb50c60.png" alt="" />
+					<img src="../../public/images/front.png" alt="" />
 					<div className="banner-text wrapper">
 						<h1>Duty After School</h1>
 						<p>

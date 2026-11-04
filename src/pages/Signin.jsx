@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/main2.css";
 import "../styles/token.css";
 import logo from "../../public/images/Logo.png";
@@ -7,9 +7,12 @@ import iconGoogle from "../../public/images/icon_google.png";
 
 function Signin() {
 	const [form, setForm] = useState({ username: "", password: "", confirmPassword: "" });
+	const navigate = useNavigate();
 
 	const handleForm = () => {
 		console.log("Data sudah terkirim!", form);
+
+		navigate("/home");
 	};
 
 	return (

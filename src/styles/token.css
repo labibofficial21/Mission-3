@@ -488,7 +488,7 @@
 	flex-direction: column;
 	gap: 16px;
 
-	margin-block: 2em;
+	padding-block: 2em;
 
 	color: var(--text-light-primary);
 }
@@ -554,7 +554,8 @@
 }
 
 .footer-container {
-	margin-block: clamp(2rem, 4vw, 3rem);
+	padding-block: clamp(2rem, 4vw, 3rem);
+	background-color: var(--other-body-background);
 
 	display: flex;
 	justify-content: space-between;
@@ -569,5 +570,5 @@
 .footer-info {
 	color: var(--text-light-secondary);
 
-	margin-top: 1em;
+	padding-top: 1em;
 }
